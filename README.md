@@ -26,13 +26,14 @@ A web site, where you can track your finances. Adding (update, delete) your expe
 
 ### Transaction
 
-| Title                    | Type    | Constraint |
-| ------------------------ | ------- | ---------- |
-| TransactionId            | int     | PK         |
-| Title                    | string  | NOT NULL   |
-| TransactionDescriptionId | int     | FK, NULL   |
-| Price                    | decimal | NOT NULL   |
-| IsIncome                 | bool    | NOT NULL   |
+| Title                    | Type     | Constraint |
+| ------------------------ | -------- | ---------- |
+| TransactionId            | int      | PK         |
+| Title                    | string   | NOT NULL   |
+| TransactionDate          | datetime | NOT NULL   |
+| TransactionDescriptionId | int      | FK, NULL   |
+| Price                    | decimal  | NOT NULL   |
+| IsIncome                 | bool     | NOT NULL   |
 
 #### Example
 
