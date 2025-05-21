@@ -10,11 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add sqlite connection
-
-// TODO: use appsettings.json
-//options => options.UseSqlite(builder.Configuration["ConnectionStrings:SqliteConnection"])
-
-builder.Services.AddDbContext<TransactionContext>();
+builder.Services.AddTransactionContext();
 
 var app = builder.Build();
 

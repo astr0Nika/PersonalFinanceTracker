@@ -9,3 +9,6 @@
 | 5   | 19.05.2025 15:19 | Start API                       | -                                                 | localhost page opens with api and it's methods | Succeeded |
 | 6   | 19.05.2025 16:02 | Create Transaction              | title=Januar Lohn: price=1200.00; isIncoming=true | eintrag in db                                  | Failed    |
 | 7   | 19.05.2025 16:12 | Create Transaction              | title=Januar Lohn: price=1200.00; isIncoming=true | eintrag in db                                  | Succeeded |
+| 8   | 21.05.2025 08:10 | Start API                       | -                                                 | localhost page opens with api and it's methods | Failed    |
+| 9   | 21.05.2025 08:13 | Start API                       | -                                                 | localhost page opens with api and it's methods | Succeeded |
+| 10  | 21.05.2025 08:14 | Get Transactions                | -                                                 | return the one current transaction in db file  | Succeeded |

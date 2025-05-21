@@ -8,8 +8,8 @@ namespace FinanceTracker.Data.Models
         public int TransactionDescriptionId { get; set; }
 
         [Required]
-        public string Title { get; set; } = string.Empty;
+        public string Title { get; set; }
 
-        public List<Transaction> Transactions { get; set; }
+        public virtual List<Transaction> Transactions { get; set; }
     }
 }

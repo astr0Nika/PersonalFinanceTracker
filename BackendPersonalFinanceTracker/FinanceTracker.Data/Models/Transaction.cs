@@ -8,7 +8,7 @@ namespace FinanceTracker.Data.Models
         public int TransactionId { get; set; }
         
         [Required]
-        public string Title { get; set; } = string.Empty;
+        public string Title { get; set; }
 
         [Required]
         public DateTime TransactionDate { get; set; }
@@ -21,6 +21,6 @@ namespace FinanceTracker.Data.Models
         [Required]
         public bool IsIncome { get; set; }
 
-        public TransactionDescription? TransactionDescription { get; set; }
+        public virtual TransactionDescription? TransactionDescription { get; set; }
     }
 }
