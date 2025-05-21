@@ -2,7 +2,7 @@
 
 namespace FinanceTracker.Data.Models
 {
-    public class Transaction
+    public class TransactionEntity
     {
         [Key]
         public int TransactionId { get; set; }
@@ -21,6 +21,6 @@ namespace FinanceTracker.Data.Models
         [Required]
         public bool IsIncome { get; set; }
 
-        public virtual TransactionDescription? TransactionDescription { get; set; }
+        public virtual TransactionDescriptionEntity? TransactionDescription { get; set; }
     }
 }

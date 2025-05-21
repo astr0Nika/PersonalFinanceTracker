@@ -2,7 +2,7 @@
 
 namespace FinanceTracker.Data.Models
 {
-    public class TransactionDescription
+    public class TransactionDescriptionEntity
     {
         [Key]
         public int TransactionDescriptionId { get; set; }
@@ -10,6 +10,6 @@ namespace FinanceTracker.Data.Models
         [Required]
         public string Title { get; set; }
 
-        public virtual List<Transaction> Transactions { get; set; }
+        public virtual List<TransactionEntity> Transactions { get; set; }
     }
 }
