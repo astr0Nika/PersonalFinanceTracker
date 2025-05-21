@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { TransactionTableComponent } from '../transaction-table/transaction-table.component';
 
 @Component({
-  selector: 'app-test',
+  selector: 'app-transactions',
   imports: [TransactionTableComponent],
-  templateUrl: './test.component.html',
+  templateUrl: './transactions.component.html',
 })
-export class TestComponent {}
+export class TransactionsComponent {}

@@ -1,5 +1,5 @@
-<nav style="background-color: cadetblue">
-  <ul>
+<nav>
+  <ul class="nav-list">
     <li>
       <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"
         >Home</a
@@ -7,13 +7,15 @@
     </li>
     <li>
       <a
-        routerLink="/test"
+        routerLink="/transactions"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        >Test</a
+        >Transactions</a
       >
     </li>
   </ul>
 </nav>
 <!-- The routed views render in the <router-outlet>-->
-<router-outlet />
+<div style="margin: 20px">
+  <router-outlet />
+</div>

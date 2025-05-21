@@ -1,4 +1,5 @@
 table {
+  width: 100%;
   border-collapse: collapse;
   border: 2px solid rgb(140 140 140);
   font-family: sans-serif;
@@ -6,24 +7,18 @@ table {
   letter-spacing: 1px;
 }
 
-caption {
-  caption-side: bottom;
-  padding: 10px;
-  font-weight: bold;
-}
-
 thead {
   background-color: rgb(228 240 245);
+}
+
+th {
+  font-weight: bold;
 }
 
 th,
 td {
   border: 1px solid rgb(160 160 160);
-  padding: 8px 10px;
-}
-
-td:last-of-type {
-  text-align: center;
+  padding: 8px 12px;
 }
 
 tbody > tr:nth-of-type(even) {

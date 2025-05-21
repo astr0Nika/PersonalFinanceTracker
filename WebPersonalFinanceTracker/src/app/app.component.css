@@ -1,0 +1,21 @@
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+  display: flex;
+  background-color: rgb(191, 223, 236);
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-list a.active {
+  border-bottom: 2px solid gray;
+}

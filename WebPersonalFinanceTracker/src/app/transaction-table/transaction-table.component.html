@@ -1,34 +1,22 @@
 <table>
-  <caption>
-    Front-end web developer course 2021
-  </caption>
   <thead>
     <tr>
-      <th scope="col">Person</th>
-      <th scope="col">Most interest in</th>
-      <th scope="col">Age</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Is an income</th>
+      <th>Date</th>
+      <th>Description</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">Chris</th>
-      <td>HTML tables</td>
-      <td>22</td>
-    </tr>
-    <tr>
-      <th scope="row">Dennis</th>
-      <td>Web accessibility</td>
-      <td>45</td>
-    </tr>
-    <tr>
-      <th scope="row">Sarah</th>
-      <td>JavaScript frameworks</td>
-      <td>29</td>
-    </tr>
-    <tr>
-      <th scope="row">Karen</th>
-      <td>Web performance</td>
-      <td>36</td>
+    <tr *ngFor="let transaction of transactions">
+      <td>{{ transaction.id }}</td>
+      <td>{{ transaction.title }}</td>
+      <td>{{ transaction.price }}</td>
+      <td>{{ transaction.isIncome }}</td>
+      <td>{{ transaction.transactionDate }}</td>
+      <td>{{ transaction.transactionDescriptionName }}</td>
     </tr>
   </tbody>
 </table>
