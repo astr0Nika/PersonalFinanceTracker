@@ -8,9 +8,9 @@ import { Transaction } from '../modules/transaction';
 export class TransactionService {
   private http = inject(HttpClient);
 
-  // TODO: not yet tested
   getTransactions(): Transaction[] {
     let transactionList: Transaction[] = [];
+
     this.http
       .get<Transaction[]>(
         'https://localhost:7149/api/Transaction/GetTransactions'
@@ -20,5 +20,3 @@ export class TransactionService {
     return transactionList;
   }
 }
-
-// transaction

@@ -19,7 +19,9 @@
 
 ## UI (Website)
 
-| Nr. | Date Time        | Action              | Input | Expectation                      | Status    |
-| --- | ---------------- | ------------------- | ----- | -------------------------------- | --------- |
-| 1   | 21.05.2025 10:00 | Run Angular Website | -     | No error, navigation/routes work | Succeeded |
-| 2   | 21.05.2025 10:57 | Run Angular Website | -     | No error, navigation/routes work | Succeeded |
+| Nr. | Date Time        | Action                     | Input | Expectation                      | Status    |
+| --- | ---------------- | -------------------------- | ----- | -------------------------------- | --------- |
+| 1   | 21.05.2025 10:00 | Run Angular Website        | -     | No error, navigation/routes work | Succeeded |
+| 2   | 21.05.2025 10:57 | Run Angular Website        | -     | No error, navigation/routes work | Succeeded |
+| 3   | 22.05.2025 07:35 | API Call - GetTransactions | -     | List of transactions from db     | Failed    |
+| 3   | 22.05.2025 07:44 | API Call - GetTransactions | -     | List of transactions from db     | Failed    |

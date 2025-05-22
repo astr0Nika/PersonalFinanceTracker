@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Transaction } from '../../modules/transaction';
+import { TransactionService } from '../../services/transaction-service';
 
 @Component({
   selector: 'app-transaction-table',
@@ -8,39 +10,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './transaction-table.component.css',
 })
 export class TransactionTableComponent {
-  //TODO: get transactions from API
-  transactions = [
-    {
-      id: 0,
-      title: 'Lohn Mai',
-      transactionDate: '',
-      price: 1200,
-      isIncome: true,
-      transactionDescriptionName: 'Pay',
-    },
-    {
-      id: 1,
-      title: 'Benzin Honda',
-      transactionDate: '',
-      price: 11.24,
-      isIncome: false,
-      transactionDescriptionName: 'Car',
-    },
-    {
-      id: 2,
-      title: 'Spar',
-      transactionDate: '',
-      price: 64.7,
-      isIncome: false,
-      transactionDescriptionName: 'Grocery',
-    },
-    {
-      id: 3,
-      title: 'FRK Mitglied',
-      transactionDate: '',
-      price: 40,
-      isIncome: false,
-      transactionDescriptionName: 'Hobby',
-    },
-  ];
+  tService = inject(TransactionService);
+
+  transactions: Transaction[] = [];
+
+  constructor() {
+    this.transactions = this.tService.getTransactions();
+  }
 }
