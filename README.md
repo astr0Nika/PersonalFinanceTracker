@@ -11,6 +11,8 @@ A web site, where you can track your finances. Adding (update, delete) your expe
 
 ### Extensions
 
+**App:**
+
 - add multiple accounts
 - filters
 - budget
@@ -19,7 +21,12 @@ A web site, where you can track your finances. Adding (update, delete) your expe
 - daily, weekly, monthly summaries
 - multi-language website
 
+**Technological:**
+
 - create a docker environment
+- test api functions -> unit tests
+- tests in angular -> jasmine, karma (check it out)
+- exchange db
 
 ## Technology
 
