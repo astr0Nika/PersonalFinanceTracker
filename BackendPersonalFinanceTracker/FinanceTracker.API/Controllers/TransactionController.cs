@@ -1,6 +1,7 @@
 ﻿using FinanceTracker.API.DTO;
 using FinanceTracker.Data;
 using FinanceTracker.Data.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,7 @@ namespace FinanceTracker.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [EnableCors("MyPolicy")]
     public class TransactionController : Controller
     {
         private readonly TransactionContext _context;

@@ -7,9 +7,13 @@ namespace FinanceTracker.Data.Models
         [Key]
         public int TransactionDescriptionId { get; set; }
 
+        /// <summary>
+        /// Name of a transaction type that describes transactions
+        /// </summary>
         [Required]
         public string Title { get; set; }
 
+        // navigational property
         public virtual List<TransactionEntity> Transactions { get; set; }
     }
 }

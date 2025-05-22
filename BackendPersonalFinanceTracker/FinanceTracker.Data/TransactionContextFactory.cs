@@ -14,6 +14,11 @@ namespace FinanceTracker.Data
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Saves data to db file in AppData
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public static IServiceCollection AddTransactionContext(this IServiceCollection services)
         {
             // create db file ine Local AppData

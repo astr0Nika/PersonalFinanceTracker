@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Transaction } from '../../modules/transaction';
-import { TransactionService } from '../../services/transaction-service';
+import { TransactionService } from '../services/transaction-service';
 
 @Component({
   selector: 'app-transaction-table',
@@ -10,11 +9,19 @@ import { TransactionService } from '../../services/transaction-service';
   styleUrl: './transaction-table.component.css',
 })
 export class TransactionTableComponent {
-  tService = inject(TransactionService);
+  transactionService = inject(TransactionService);
 
-  transactions: Transaction[] = [];
+  transactions: any = [];
 
   constructor() {
-    this.transactions = this.tService.getTransactions();
+    this.transactionService.getTransactions().subscribe({
+      next: (data) => {
+        this.transactions = data;
+      },
+      error: (err) => {
+        // TODO: show there was an error
+        console.log(err);
+      },
+    });
   }
 }
