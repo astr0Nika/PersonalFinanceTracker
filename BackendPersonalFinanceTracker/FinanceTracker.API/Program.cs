@@ -1,3 +1,4 @@
+using FinanceTracker.Core;
 using FinanceTracker.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,8 @@ builder.Services.AddSwaggerGen();
 
 // Add sqlite connection
 builder.Services.AddTransactionContextSqlite();
+builder.Services.AddScoped<TransactionRepo>();
+builder.Services.AddScoped<TransactionDescriptionRepo>();
 
 var app = builder.Build();
 
