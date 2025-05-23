@@ -19,7 +19,7 @@ namespace FinanceTracker.Data
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection AddTransactionContext(this IServiceCollection services)
+        public static IServiceCollection AddTransactionContextSqlite(this IServiceCollection services)
         {
             // create db file ine Local AppData
             var folder = Environment.SpecialFolder.LocalApplicationData;

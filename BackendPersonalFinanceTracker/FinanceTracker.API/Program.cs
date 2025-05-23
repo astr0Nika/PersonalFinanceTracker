@@ -20,7 +20,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add sqlite connection
-builder.Services.AddTransactionContext();
+builder.Services.AddTransactionContextSqlite();
 
 var app = builder.Build();
 
