@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { ITransactionService } from '../interfaces/transaction-service';
 import { Transaction } from '../interfaces/transaction';
-import { of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TransactionMockService implements ITransactionService {
-  getTransactions() {
+  getTransactions(): Observable<Transaction[]> {
     return of([
       {
         title: 'Kitchen',
@@ -148,6 +148,83 @@ export class TransactionMockService implements ITransactionService {
         price: 99.99,
         transactionDescriptionName: 'Indigo',
         isIncome: false,
+      },
+      {
+        title: 'Corn Kernels - Frozen',
+        transactionDate: '2024-09-03 12:41:10',
+        price: 13.14,
+        transactionDescriptionName: 'Red',
+        isIncome: true,
+      },
+      {
+        title: 'Grenadillo',
+        transactionDate: '2024-05-23 21:03:19',
+        price: 7.9,
+        transactionDescriptionName: 'Blue',
+        isIncome: false,
+      },
+      {
+        title: 'Sour Puss Sour Apple',
+        transactionDate: '2025-01-17 10:30:52',
+        price: 7.9,
+        transactionDescriptionName: 'Indigo',
+        isIncome: true,
+      },
+      {
+        title: 'Pie Pecan',
+        transactionDate: '2024-11-07 05:10:41',
+        price: 4.05,
+        transactionDescriptionName: null,
+        isIncome: false,
+      },
+      {
+        title: 'Bulgar',
+        transactionDate: '2024-04-28 10:24:44',
+        price: 7.9,
+        transactionDescriptionName: null,
+        isIncome: false,
+      },
+      {
+        title: 'Chives - Fresh',
+        transactionDate: '2025-03-13 19:11:17',
+        price: 7.9,
+        transactionDescriptionName: null,
+        isIncome: true,
+      },
+      {
+        title: 'Cake - Night And Day Choclate',
+        transactionDate: '2025-03-17 16:55:23',
+        price: 7.9,
+        transactionDescriptionName: 'Pink',
+        isIncome: true,
+      },
+      {
+        title: 'Salt - Celery',
+        transactionDate: '2024-10-02 15:43:27',
+        price: 7.9,
+        transactionDescriptionName: null,
+        isIncome: true,
+      },
+      {
+        title: 'Beef - Kindney, Whole',
+        transactionDate: '2024-06-22 15:23:17',
+        price: 13.14,
+        transactionDescriptionName: null,
+        isIncome: true,
+      },
+      {
+        title: 'Smoked Paprika',
+        transactionDate: '2024-05-19 02:41:57',
+        price: 13.14,
+        transactionDescriptionName: 'Purple',
+        isIncome: false,
+      },
+      {
+        title: 'Energy Drink - Franks Pineapple',
+        transactionDate: '2024-12-11 16:27:15',
+        price: 52.89,
+        transactionDescriptionName: 'Red',
+        isIncome: true,
       },
     ]);
   }
