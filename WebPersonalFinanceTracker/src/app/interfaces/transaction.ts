@@ -1,7 +1,7 @@
 export interface Transaction {
   title: string;
-  transactionDate: Date;
+  transactionDate: string;
   price: number;
   isIncome: boolean;
-  transactionDescriptionName: string | undefined;
+  transactionDescriptionName: string | null;
 }
