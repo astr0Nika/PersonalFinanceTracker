@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Data", "Fina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.API", "FinanceTracker.API\FinanceTracker.API.csproj", "{443E559C-B0D6-41B8-B349-46840D2E5234}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Core", "FinanceTracker.Core\FinanceTracker.Core.csproj", "{088CB56F-D8DA-43F6-B821-0E9D5C73BBAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{443E559C-B0D6-41B8-B349-46840D2E5234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{443E559C-B0D6-41B8-B349-46840D2E5234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{443E559C-B0D6-41B8-B349-46840D2E5234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088CB56F-D8DA-43F6-B821-0E9D5C73BBAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088CB56F-D8DA-43F6-B821-0E9D5C73BBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088CB56F-D8DA-43F6-B821-0E9D5C73BBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088CB56F-D8DA-43F6-B821-0E9D5C73BBAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
