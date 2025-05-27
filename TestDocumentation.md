@@ -18,6 +18,9 @@
 | 13  | 21.05.2025 15:31 | Create Transactions with description id | title=April Einkommen; transactionDescriptionId=1; price=1240; isIncome=true | create new entry in db                         | Succeed   |
 | 14  | 23.05.2025 11:25 | Get Transactions                        | -                                                                            | array of transactions                          | Failed    |
 | 14  | 23.05.2025 11:25 | Get Transactions                        | -                                                                            | array of transactions                          | Succeeded |
+| 14  | 26.05.2025 14:28 | Get Transactions                        | -                                                                            | array of transactions                          | Failed    |
+| 14  | 27.05.2025 08:11 | Get Transactions                        | -                                                                            | array of transactions                          | Failed    |
+| 14  | 27.05.2025 10:42 | Get Transactions                        | -                                                                            | array of transactions                          | Succeeded |
 
 ## UI (Website)
 
