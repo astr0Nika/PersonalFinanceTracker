@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TransactionAPIService } from '../services/transaction-api-service';
 import { TransactionMockService } from '../services/transaction-mock-service';
-import { Transaction } from '../interfaces/transaction';
+import { IDateTime, ITransaction } from '../interfaces/transaction';
 
 @Component({
   selector: 'app-transaction-table',
@@ -11,10 +11,10 @@ import { Transaction } from '../interfaces/transaction';
   styleUrl: './transaction-table.component.css',
 })
 export class TransactionTableComponent {
-  // transactionService = inject(TransactionAPIService);
-  transactionService = inject(TransactionMockService);
+  transactionService = inject(TransactionAPIService);
+  // transactionService = inject(TransactionMockService);
 
-  transactions: Transaction[] = [];
+  transactions: ITransaction[] = [];
 
   constructor() {
     this.transactionService

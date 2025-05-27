@@ -20,6 +20,7 @@ A web site, where you can track your finances. Adding (update, delete) your expe
 - charts
 - daily, weekly, monthly summaries
 - multi-language website
+- different currencies
 
 **Technological:**
 
