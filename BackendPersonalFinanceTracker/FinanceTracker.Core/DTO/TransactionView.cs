@@ -2,7 +2,7 @@
 {
     public class TransactionView
     {
-        public TransactionView(string title, DateTime transactionDate, string? transactionDescriptionName, decimal price, bool isIncome)
+        public TransactionView(string title, DateTime transactionDate, string? transactionDescriptionName, double price, bool isIncome)
         {
             Title = title;
             TransactionDate = transactionDate.ToString("dd-MM-yyyy HH:mm:ss");
@@ -17,7 +17,7 @@
 
         public string? TransactionDescriptionName { get; private set; }
 
-        public decimal Price { get; private set; }
+        public double Price { get; private set; }
 
         public bool IsIncome { get; private set; }
     }

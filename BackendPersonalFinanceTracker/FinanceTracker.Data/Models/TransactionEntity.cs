@@ -25,7 +25,7 @@ namespace FinanceTracker.Data.Models
         public int? TransactionDescriptionId { get; set; }
 
         [Required]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
         /// <summary>
         /// True if receiving money. False if exporting money

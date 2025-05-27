@@ -4,6 +4,24 @@
 
 ### Development Mode
 
+- create `appsettings.json` in FinanceTracker.API Project
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "TransactionConnectionSqlServer": "you sql server db connecion"
+  }
+}
+```
+
+-
 - run in any editor that allows you to compile c#
 - startup project is `FinanceTracker.API`
 - after running the project, `swagger` will open, showing all public functions
@@ -17,14 +35,12 @@ Not documentation
 - **Microsoft.EntityFrameworkCore** 9.0.5
   - Abstractions
   - Relational
-  - Sqlite
+  - SqlServer
   - Tools
+- **Microsoft.Extensions.Configuration.FileExtensions** 9.0.5
+- **Microsoft.Extensions.Configuration.Json** 9.0.5
 - **Swashbuckle.AspNetCore** 8.1.1
 
 ## Database
 
-`TransactionContextFactory` class will add the context to the service collection. One of the functions in the class should be called from API `Programm.cs`.
-
-**Currently in use** is the Sqlite Database which file is located in Local AppData Folder.
-
-**Exchanging** where the Sqlite will be saved can currently be done in the function itself.
+**Currently in use** is the Local SQL Server. Path needs to be defined in appsettings.json.

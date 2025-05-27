@@ -24,7 +24,7 @@ namespace FinanceTracker.Core
                 .ToList();
         }
 
-        public async Task CreateAsync(string title, decimal price, bool isIncoming, int? transactionDescriptionId)
+        public async Task CreateAsync(string title, double price, bool isIncoming, int? transactionDescriptionId)
         {
             TransactionDescriptionEntity found = await _context.TransactionDescriptions
                     .Where(td => td.TransactionDescriptionId == transactionDescriptionId)

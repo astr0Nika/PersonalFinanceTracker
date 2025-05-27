@@ -21,7 +21,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Add sqlite connection
-builder.Services.AddTransactionContextSqlite();
+builder.Services.AddDbContext<TransactionContext>();
 builder.Services.AddScoped<TransactionRepo>();
 builder.Services.AddScoped<TransactionDescriptionRepo>();
 

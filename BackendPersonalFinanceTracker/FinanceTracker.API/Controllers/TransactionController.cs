@@ -24,7 +24,7 @@ namespace FinanceTracker.API.Controllers
         }
 
         [HttpPost("Create")]
-        public async Task CreateTransaction(string title, decimal price, bool isIncoming, int? transactionDescriptionId = null)
+        public async Task CreateTransaction(string title, double price, bool isIncoming, int? transactionDescriptionId = null)
         {
             // TODO: check parameters
             await _transactionRepo.CreateAsync(title, price, isIncoming, transactionDescriptionId);

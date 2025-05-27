@@ -17,7 +17,7 @@ namespace FinanceTracker.Core
         public async Task<List<TransactionDescriptionView>> GetDescriptionListAsync()
         {
             var result = await _context.TransactionDescriptions.ToListAsync();
-            return result.Select(td => new TransactionDescriptionView(td.Title)).ToList();
+            return result.Select(td => new TransactionDescriptionView(td.Title, td.TransactionDescriptionId)).ToList();
         }
 
         public async Task CreateAsync(string title)
