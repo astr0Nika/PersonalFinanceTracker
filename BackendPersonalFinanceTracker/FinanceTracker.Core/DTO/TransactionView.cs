@@ -5,7 +5,7 @@
         public TransactionView(string title, DateTime transactionDate, string? transactionDescriptionName, double price, bool isIncome)
         {
             Title = title;
-            TransactionDate = transactionDate.ToString("dd-MM-yyyy HH:mm:ss");
+            TransactionDate = new DateTimeView(transactionDate);
             TransactionDescriptionName = transactionDescriptionName;
             Price = price;
             IsIncome = isIncome;
@@ -13,7 +13,7 @@
 
         public string Title { get; private set; }
 
-        public string TransactionDate { get; private set; }
+        public DateTimeView TransactionDate { get; private set; }
 
         public string? TransactionDescriptionName { get; private set; }
 
