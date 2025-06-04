@@ -1,0 +1,664 @@
+{
+  "data": [
+    {
+      "transactionId": 0,
+      "title": "Kitchen",
+      "transactionDate": {
+        "year": 2025,
+        "month": 6,
+        "day": 4,
+        "hour": 10,
+        "minute": 24
+      },
+      "price": 29.99,
+      "isIncome": true,
+      "transactionDescriptionName": "Purple",
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 1,
+      "title": "Food - Desserts",
+      "transactionDate": {
+        "year": 2024,
+        "month": 8,
+        "day": 25,
+        "hour": 16,
+        "minute": 22
+      },
+      "price": 2.99,
+      "transactionDescriptionName": "Purple",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 3,
+      "title": "Food - Seafood",
+      "transactionDate": {
+        "year": 2024,
+        "month": 7,
+        "day": 6,
+        "hour": 7,
+        "minute": 5
+      },
+      "price": 8.99,
+      "transactionDescriptionName": "Green",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 4,
+      "title": "Food - Baking Goods",
+      "transactionDate": {
+        "year": 2024,
+        "month": 4,
+        "day": 25,
+        "hour": 16,
+        "minute": 21
+      },
+      "price": 3.99,
+      "transactionDescriptionName": "Red",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 5,
+      "title": "Food - Frozen Desserts",
+      "transactionDate": {
+        "year": 2025,
+        "month": 5,
+        "day": 8,
+        "hour": 1,
+        "minute": 33
+      },
+      "price": 4.99,
+      "transactionDescriptionName": null,
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 6,
+      "title": "Food - Pasta",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 12,
+        "hour": 3,
+        "minute": 15
+      },
+      "price": 1.89,
+      "transactionDescriptionName": "Green",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 8,
+      "title": "Food - Frozen Foods",
+      "transactionDate": {
+        "year": 2025,
+        "month": 4,
+        "day": 19,
+        "hour": 9,
+        "minute": 55
+      },
+      "price": 2.99,
+      "transactionDescriptionName": "Green",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 9,
+      "title": "Health",
+      "transactionDate": {
+        "year": 2024,
+        "month": 5,
+        "day": 28,
+        "hour": 7,
+        "minute": 49
+      },
+      "price": 5.99,
+      "transactionDescriptionName": "Indigo",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 10,
+      "title": "Outdoor",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 25,
+        "hour": 17,
+        "minute": 4
+      },
+      "price": 29.99,
+      "transactionDescriptionName": "Pink",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 12,
+      "title": "Health",
+      "transactionDate": {
+        "year": 2024,
+        "month": 8,
+        "day": 31,
+        "hour": 23,
+        "minute": 27
+      },
+      "price": 49.99,
+      "transactionDescriptionName": "Green",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 13,
+      "title": "Food - Dairy",
+      "transactionDate": {
+        "year": 2025,
+        "month": 5,
+        "day": 4,
+        "hour": 17,
+        "minute": 46
+      },
+      "price": 2.99,
+      "transactionDescriptionName": "Pink",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 14,
+      "title": "Toys",
+      "transactionDate": {
+        "year": 2024,
+        "month": 9,
+        "day": 5,
+        "hour": 3,
+        "minute": 14
+      },
+      "price": 19.99,
+      "transactionDescriptionName": null,
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 15,
+      "title": "Automotive",
+      "transactionDate": {
+        "year": 2024,
+        "month": 12,
+        "day": 26,
+        "hour": 18,
+        "minute": 27
+      },
+      "price": 59.99,
+      "transactionDescriptionName": "Purple",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 21,
+      "title": "Smart Home",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 16,
+        "hour": 23,
+        "minute": 48
+      },
+      "price": 99.99,
+      "transactionDescriptionName": "Indigo",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 22,
+      "title": "Corn Kernels - Frozen",
+      "transactionDate": {
+        "year": 2024,
+        "month": 9,
+        "day": 3,
+        "hour": 12,
+        "minute": 41
+      },
+      "price": 13.14,
+      "transactionDescriptionName": "Red",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 23,
+      "title": "Granadilla",
+      "transactionDate": {
+        "year": 2024,
+        "month": 5,
+        "day": 23,
+        "hour": 21,
+        "minute": 3
+      },
+      "price": 7.9,
+      "transactionDescriptionName": "Blue",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 25,
+      "title": "Sour Puss Sour Apple",
+      "transactionDate": {
+        "year": 2025,
+        "month": 1,
+        "day": 17,
+        "hour": 10,
+        "minute": 30
+      },
+      "price": 7.9,
+      "transactionDescriptionName": "Indigo",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 26,
+      "title": "Pie Pecan",
+      "transactionDate": {
+        "year": 2024,
+        "month": 11,
+        "day": 7,
+        "hour": 5,
+        "minute": 10
+      },
+      "price": 4.05,
+      "transactionDescriptionName": null,
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 27,
+      "title": "Bulgar",
+      "transactionDate": {
+        "year": 2024,
+        "month": 4,
+        "day": 28,
+        "hour": 10,
+        "minute": 24
+      },
+      "price": 7.9,
+      "transactionDescriptionName": null,
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 28,
+      "title": "Chives - Fresh",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 13,
+        "hour": 19,
+        "minute": 11
+      },
+      "price": 7.9,
+      "transactionDescriptionName": null,
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 30,
+      "title": "Cake - Night And day Chocolate",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 17,
+        "hour": 16,
+        "minute": 55
+      },
+      "price": 7.9,
+      "transactionDescriptionName": "Pink",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 31,
+      "title": "Salt - Celery",
+      "transactionDate": {
+        "year": 2024,
+        "month": 10,
+        "day": 2,
+        "hour": 15,
+        "minute": 43
+      },
+      "price": 7.9,
+      "transactionDescriptionName": null,
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 32,
+      "title": "Beef - Kinne, Whole",
+      "transactionDate": {
+        "year": 2024,
+        "month": 6,
+        "day": 22,
+        "hour": 15,
+        "minute": 23
+      },
+      "price": 13.14,
+      "transactionDescriptionName": null,
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 5,
+      "title": "Food - Frozen Desserts",
+      "transactionDate": {
+        "year": 2025,
+        "month": 5,
+        "day": 8,
+        "hour": 1,
+        "minute": 33
+      },
+      "price": 4.99,
+      "transactionDescriptionName": null,
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 6,
+      "title": "Food - Pasta",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 12,
+        "hour": 3,
+        "minute": 15
+      },
+      "price": 1.89,
+      "transactionDescriptionName": "Green",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 8,
+      "title": "Food - Frozen Foods",
+      "transactionDate": {
+        "year": 2025,
+        "month": 4,
+        "day": 19,
+        "hour": 9,
+        "minute": 55
+      },
+      "price": 2.99,
+      "transactionDescriptionName": "Green",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 9,
+      "title": "Health",
+      "transactionDate": {
+        "year": 2024,
+        "month": 5,
+        "day": 28,
+        "hour": 7,
+        "minute": 49
+      },
+      "price": 5.99,
+      "transactionDescriptionName": "Indigo",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 10,
+      "title": "Outdoor",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 25,
+        "hour": 17,
+        "minute": 4
+      },
+      "price": 29.99,
+      "transactionDescriptionName": "Pink",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 12,
+      "title": "Health",
+      "transactionDate": {
+        "year": 2024,
+        "month": 8,
+        "day": 31,
+        "hour": 23,
+        "minute": 27
+      },
+      "price": 49.99,
+      "transactionDescriptionName": "Green",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 13,
+      "title": "Food - Dairy",
+      "transactionDate": {
+        "year": 2025,
+        "month": 5,
+        "day": 4,
+        "hour": 17,
+        "minute": 46
+      },
+      "price": 2.99,
+      "transactionDescriptionName": "Pink",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 14,
+      "title": "Toys",
+      "transactionDate": {
+        "year": 2024,
+        "month": 9,
+        "day": 5,
+        "hour": 3,
+        "minute": 14
+      },
+      "price": 19.99,
+      "transactionDescriptionName": null,
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 15,
+      "title": "Automotive",
+      "transactionDate": {
+        "year": 2024,
+        "month": 12,
+        "day": 26,
+        "hour": 18,
+        "minute": 27
+      },
+      "price": 59.99,
+      "transactionDescriptionName": "Purple",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 21,
+      "title": "Smart Home",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 16,
+        "hour": 23,
+        "minute": 48
+      },
+      "price": 99.99,
+      "transactionDescriptionName": "Indigo",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 22,
+      "title": "Corn Kernels - Frozen",
+      "transactionDate": {
+        "year": 2024,
+        "month": 9,
+        "day": 3,
+        "hour": 12,
+        "minute": 41
+      },
+      "price": 13.14,
+      "transactionDescriptionName": "Red",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 23,
+      "title": "Granadilla",
+      "transactionDate": {
+        "year": 2024,
+        "month": 5,
+        "day": 23,
+        "hour": 21,
+        "minute": 3
+      },
+      "price": 7.9,
+      "transactionDescriptionName": "Blue",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 25,
+      "title": "Sour Puss Sour Apple",
+      "transactionDate": {
+        "year": 2025,
+        "month": 1,
+        "day": 17,
+        "hour": 10,
+        "minute": 30
+      },
+      "price": 7.9,
+      "transactionDescriptionName": "Indigo",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 26,
+      "title": "Pie Pecan",
+      "transactionDate": {
+        "year": 2024,
+        "month": 11,
+        "day": 7,
+        "hour": 5,
+        "minute": 10
+      },
+      "price": 4.05,
+      "transactionDescriptionName": null,
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 27,
+      "title": "Bulgar",
+      "transactionDate": {
+        "year": 2024,
+        "month": 4,
+        "day": 28,
+        "hour": 10,
+        "minute": 24
+      },
+      "price": 7.9,
+      "transactionDescriptionName": null,
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 28,
+      "title": "Chives - Fresh",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 13,
+        "hour": 19,
+        "minute": 11
+      },
+      "price": 7.9,
+      "transactionDescriptionName": null,
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 30,
+      "title": "Cake - Night And day Chocolate",
+      "transactionDate": {
+        "year": 2025,
+        "month": 3,
+        "day": 17,
+        "hour": 16,
+        "minute": 55
+      },
+      "price": 7.9,
+      "transactionDescriptionName": "Pink",
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 31,
+      "title": "Salt - Celery",
+      "transactionDate": {
+        "year": 2024,
+        "month": 10,
+        "day": 2,
+        "hour": 15,
+        "minute": 43
+      },
+      "price": 7.9,
+      "transactionDescriptionName": null,
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 32,
+      "title": "Beef - Kinne, Whole",
+      "transactionDate": {
+        "year": 2024,
+        "month": 6,
+        "day": 22,
+        "hour": 15,
+        "minute": 23
+      },
+      "price": 13.14,
+      "transactionDescriptionName": null,
+      "isIncome": true,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 33,
+      "title": "Smoked Paprika",
+      "transactionDate": {
+        "year": 2024,
+        "month": 5,
+        "day": 19,
+        "hour": 2,
+        "minute": 41
+      },
+      "price": 13.14,
+      "transactionDescriptionName": "Purple",
+      "isIncome": false,
+      "fullDateString": ""
+    },
+    {
+      "transactionId": 34,
+      "title": "Energy Drink - Franks Pineapple",
+      "transactionDate": {
+        "year": 2024,
+        "month": 12,
+        "day": 11,
+        "hour": 16,
+        "minute": 27
+      },
+      "price": 52.89,
+      "transactionDescriptionName": "Red",
+      "isIncome": true,
+      "fullDateString": ""
+    }
+  ]
+}

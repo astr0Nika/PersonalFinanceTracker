@@ -1,16 +1,20 @@
-export interface ITransaction {
-  transactionId: number;
-  title: string;
-  transactionDate: IDateTime;
-  price: number;
-  isIncome: boolean;
-  transactionDescriptionName: string | null;
+export class Transaction {
+  transactionId!: number;
+  title!: string;
+  transactionDate!: DateTime;
+  price!: number;
+  isIncome!: boolean;
+  transactionDescriptionName!: string | null;
+
+  get fullDateString(): string {
+    return `${this.transactionDate.day}/${this.transactionDate.month}/${this.transactionDate.year} ${this.transactionDate.hour}:${this.transactionDate.minute}`;
+  }
 }
 
-export interface IDateTime {
-  year: number;
-  month: number;
-  day: number;
-  hour: number;
-  minute: number;
+export class DateTime {
+  year!: number;
+  month!: number;
+  day!: number;
+  hour!: number;
+  minute!: number;
 }

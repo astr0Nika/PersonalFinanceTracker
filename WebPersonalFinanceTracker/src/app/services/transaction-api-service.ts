@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { ITransactionService } from '../interfaces/transaction-service';
-import { ITransaction } from '../interfaces/transaction';
+import { Transaction } from '../interfaces/transaction';
 
 @Injectable({
   providedIn: 'root',
@@ -11,12 +11,10 @@ export class TransactionAPIService implements ITransactionService {
   private http = inject(HttpClient);
 
   getTransactions() {
-    return this.http.get<ITransaction[]>(
-      `${this.apiUrl}/Transaction/GetTransactionList`
-    );
+    return this.http.get<Transaction[]>(`${this.apiUrl}/Transactions/GetList`);
   }
 
-  createTransaction(transaction: ITransaction): void {
+  createTransaction(transaction: Transaction): void {
     throw new Error('Method not implemented.');
   }
 }

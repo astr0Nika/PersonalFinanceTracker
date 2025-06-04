@@ -1,8 +1,8 @@
 import { Observable } from 'rxjs';
-import { ITransaction } from './transaction';
+import { Transaction } from './transaction';
 
 export interface ITransactionService {
-  getTransactions(): Observable<ITransaction[]>;
+  getTransactions(): Observable<Transaction[]>;
 
-  createTransaction(transaction: ITransaction): void;
+  createTransaction(transaction: Transaction): void;
 }
