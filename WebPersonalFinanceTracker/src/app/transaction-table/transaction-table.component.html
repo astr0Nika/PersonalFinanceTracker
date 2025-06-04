@@ -1,4 +1,4 @@
-<div>
+<div class="container">
   <table class="table-scroll">
     <thead>
       <tr>
@@ -9,7 +9,7 @@
         <th>Description</th>
       </tr>
     </thead>
-    <tbody class="body-half-screen">
+    <tbody>
       <tr *ngFor="let transaction of transactions">
         <td>
           {{ transaction.transactionDate.day }}
