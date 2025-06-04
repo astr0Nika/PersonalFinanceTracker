@@ -8,13 +8,20 @@ namespace FinanceTracker.API.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [EnableCors("MyPolicy")]
-    public class TransactionDescriptionController : Controller
+    public class TransactionDescriptionsController : Controller
     {
         private readonly TransactionDescriptionRepo _transactionDescriptionRepo;
 
-        public TransactionDescriptionController(TransactionDescriptionRepo reposetory)
+        public TransactionDescriptionsController(TransactionDescriptionRepo reposetory)
         {
             _transactionDescriptionRepo = reposetory;
+        }
+
+
+        [HttpGet("GetList")]
+        public async Task<List<TransactionDescriptionView>> GetTransactionDescriptionsAsync()
+        {
+            return await _transactionDescriptionRepo.GetDescriptionListAsync();
         }
 
         [HttpPost("Create")]
@@ -27,12 +34,6 @@ namespace FinanceTracker.API.Controllers
             }
 
             await _transactionDescriptionRepo.CreateAsync(title);
-        }
-
-        [HttpGet("GetTransactionDescriptionList")]
-        public async Task<List<TransactionDescriptionView>> GetTransactionDescriptionsAsync()
-        {
-            return await _transactionDescriptionRepo.GetDescriptionListAsync();
         }
     }
 }

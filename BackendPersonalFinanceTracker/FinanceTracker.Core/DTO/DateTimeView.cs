@@ -1,9 +1,22 @@
-﻿namespace FinanceTracker.Core.DTO
+﻿using System;
+
+namespace FinanceTracker.Core.DTO
 {
     public class DateTimeView
     {
         public DateTimeView(DateTime dateTime)
         {
+            Year = dateTime.Year;
+            Month = dateTime.Month;
+            Day = dateTime.Day;
+            Hour = dateTime.Hour;
+            Minute = dateTime.Minute;
+        }
+
+        public DateTimeView() 
+        {
+            var dateTime = DateTime.Now;
+
             Year = dateTime.Year;
             Month = dateTime.Month;
             Day = dateTime.Day;

@@ -11,6 +11,15 @@
             IsIncome = isIncome;
         }
 
+        public TransactionView(string title, DateTimeView transactionDate, string? transactionDescriptionName, double price, bool isIncome)
+        {
+            Title = title;
+            TransactionDate = transactionDate;
+            TransactionDescriptionName = transactionDescriptionName;
+            Price = price;
+            IsIncome = isIncome;
+        }
+
         public string Title { get; private set; }
 
         public DateTimeView TransactionDate { get; private set; }
