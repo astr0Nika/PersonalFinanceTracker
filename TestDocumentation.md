@@ -36,3 +36,4 @@
 | 5   | 23.05.2025 11:44 | Show GetTransactions        | -     | See table transactions           | Failed    |
 | 5   | 23.05.2025 12:29 | API - Show GetTransactions  | -     | See table transactions           | Succeed   |
 | 5   | 23.05.2025 12:29 | Mock - Show GetTransactions | -     | See table transactions           | Succeed   |
+| 5   | 04.06.2025 14:44 | Mock - Show GetTransactions | -     | See table transactions           | Succeed   |
