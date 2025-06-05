@@ -46,10 +46,11 @@ export class ShapeBuilder {
         { x: width / 2, y: height, id: this.idCounter++ },
       ],
     };
+
     this.shapes.push(newShape);
   }
 
-  onMouseDown(event: MouseEvent, shape: Shape) {
+  shape_onMouseDown(event: MouseEvent, shape: Shape) {
     this.draggingShape = shape;
     this.offsetX = event.offsetX - shape.x;
     this.offsetY = event.offsetY - shape.y;
@@ -63,6 +64,35 @@ export class ShapeBuilder {
   }
 
   onMouseUp() {
+    this.shapes.forEach((shape) => {
+      if (shape.id !== this.draggingShape?.id) {
+        console.log(this.doShapesOverlay(shape, this.draggingShape!));
+      }
+    });
+
     this.draggingShape = null;
+  }
+
+  doShapesOverlay(oneShape: Shape, twoShape: Shape): boolean {
+    var horizontalOverlap = false;
+    var verticalOverlap = false;
+
+    if (
+      (twoShape.x > oneShape.x && twoShape.x < oneShape.x + oneShape.width) ||
+      (twoShape.x + twoShape.width > oneShape.x &&
+        twoShape.x + twoShape.width < oneShape.x + oneShape.width)
+    ) {
+      horizontalOverlap = true;
+    }
+
+    if (
+      (twoShape.y > oneShape.y && twoShape.y < oneShape.y + oneShape.height) ||
+      (twoShape.y + twoShape.height > oneShape.y &&
+        twoShape.y + twoShape.height < oneShape.y + oneShape.height)
+    ) {
+      verticalOverlap = true;
+    }
+
+    return horizontalOverlap && verticalOverlap;
   }
 }

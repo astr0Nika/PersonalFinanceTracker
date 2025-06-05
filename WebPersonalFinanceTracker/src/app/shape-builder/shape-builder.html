@@ -12,7 +12,7 @@
       [attr.width]="shape.width"
       [attr.height]="shape.height"
       fill="lightblue"
-      (mousedown)="onMouseDown($event, shape)"
+      (mousedown)="shape_onMouseDown($event, shape)"
     />
 
     <circle
@@ -21,7 +21,7 @@
       [attr.cy]="shape.y + shape.height / 2"
       [attr.r]="shape.width / 2"
       fill="lightgreen"
-      (mousedown)="onMouseDown($event, shape)"
+      (mousedown)="shape_onMouseDown($event, shape)"
     />
 
     <circle
