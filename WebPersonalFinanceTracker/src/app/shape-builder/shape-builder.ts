@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { IShape } from '../interfaces/Shape';
+import { IShape } from '../interfaces/IShape';
 
 @Component({
   selector: 'app-shape-builder',

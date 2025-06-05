@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TransactionAPIService } from '../services/transaction-api-service';
 import { TransactionMockService } from '../services/transaction-mock-service';
-import { Transaction } from '../interfaces/transaction';
+import { Transaction } from '../models/Transaction';
 
 @Component({
   selector: 'app-transaction-table',

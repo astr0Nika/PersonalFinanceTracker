@@ -1,4 +1,4 @@
-import { IConnectionPoint } from './ConnectionPoint';
+import { IConnectionPoint } from './IConnectionPoint';
 
 export interface IShape {
   id: number;

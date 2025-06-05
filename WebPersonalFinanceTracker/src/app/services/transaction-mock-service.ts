@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { ITransactionService } from '../interfaces/transaction-service';
+import { ITransactionService } from '../interfaces/ITransactionService';
 import { Observable, of } from 'rxjs';
-import { Transaction } from '../interfaces/transaction';
+import { Transaction } from '../models/Transaction';
 import mock from './mock-data.json';
 
 @Injectable({
