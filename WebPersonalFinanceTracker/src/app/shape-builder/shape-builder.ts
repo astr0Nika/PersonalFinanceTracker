@@ -1,21 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
-interface ConnectionPoint {
-  x: number;
-  y: number;
-  id: number;
-}
-
-interface Shape {
-  id: number;
-  type: 'rectangle' | 'circle';
-  x: number;
-  y: number;
-  width: number;
-  height: number;
-  connectionPoints: ConnectionPoint[];
-}
+import { IShape } from '../interfaces/Shape';
 
 @Component({
   selector: 'app-shape-builder',
@@ -24,17 +9,52 @@ interface Shape {
   styleUrl: './shape-builder.css',
 })
 export class ShapeBuilder {
-  shapes: Shape[] = [];
-  draggingShape: Shape | null = null;
+  shapes: IShape[] = [];
+  draggingShape: IShape | null = null;
   idCounter = 0;
 
   offsetX = 0;
   offsetY = 0;
 
+  constructor() {
+    this.shapes = [
+      {
+        id: this.idCounter++,
+        type: 'circle',
+        x: 100,
+        y: 220,
+        width: 70,
+        height: 70,
+        connectionPoints: [
+          {
+            x: 10,
+            y: 0,
+            id: this.idCounter++,
+          },
+        ],
+      },
+      {
+        id: this.idCounter++,
+        type: 'rectangle',
+        x: 400,
+        y: 30,
+        width: 20,
+        height: 55,
+        connectionPoints: [
+          {
+            x: 0,
+            y: 0,
+            id: this.idCounter++,
+          },
+        ],
+      },
+    ];
+  }
+
   addShape(type: 'rectangle' | 'circle') {
     const width = 80;
-    const height = 60;
-    const newShape: Shape = {
+    const height = type === 'circle' ? 80 : 60;
+    const newShape: IShape = {
       id: this.idCounter++,
       type,
       x: 50,
@@ -42,15 +62,18 @@ export class ShapeBuilder {
       width,
       height,
       connectionPoints: [
-        { x: width / 2, y: 0, id: this.idCounter++ },
-        { x: width / 2, y: height, id: this.idCounter++ },
+        {
+          x: width / 2,
+          y: type === 'circle' ? 0 : height,
+          id: this.idCounter++,
+        },
       ],
     };
 
     this.shapes.push(newShape);
   }
 
-  shape_onMouseDown(event: MouseEvent, shape: Shape) {
+  shape_onMouseDown(event: MouseEvent, shape: IShape) {
     this.draggingShape = shape;
     this.offsetX = event.offsetX - shape.x;
     this.offsetY = event.offsetY - shape.y;
@@ -64,16 +87,23 @@ export class ShapeBuilder {
   }
 
   onMouseUp() {
-    this.shapes.forEach((shape) => {
-      if (shape.id !== this.draggingShape?.id) {
-        console.log(this.doShapesOverlay(shape, this.draggingShape!));
-      }
-    });
+    if (this.draggingShape !== null) {
+      const movedShape: IShape = this.draggingShape;
+
+      this.shapes.forEach((shape) => {
+        if (
+          shape.id !== movedShape.id &&
+          this.doShapesOverlay(shape, movedShape)
+        ) {
+          this.alignConnectionPoint(movedShape, shape);
+        }
+      });
+    }
 
     this.draggingShape = null;
   }
 
-  doShapesOverlay(oneShape: Shape, twoShape: Shape): boolean {
+  doShapesOverlay(oneShape: IShape, twoShape: IShape): boolean {
     var horizontalOverlap = false;
     var verticalOverlap = false;
 
@@ -94,5 +124,19 @@ export class ShapeBuilder {
     }
 
     return horizontalOverlap && verticalOverlap;
+  }
+
+  alignConnectionPoint(moveShape: IShape, targetShape: IShape) {
+    const cp1 = targetShape.connectionPoints[0];
+    const cp2 = moveShape.connectionPoints[0];
+
+    const cp1AbsX = targetShape.x + cp1.x;
+    const cp1AbsY = targetShape.y + cp1.y;
+
+    const newX = cp1AbsX - cp2.x;
+    const newY = cp1AbsY - cp2.y;
+
+    this.shapes.find((shape) => shape.id === moveShape.id)!.x = newX;
+    this.shapes.find((shape) => shape.id === moveShape.id)!.y = newY;
   }
 }
