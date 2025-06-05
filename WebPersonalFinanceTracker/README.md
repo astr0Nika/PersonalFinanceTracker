@@ -18,6 +18,11 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 See [Package.json](./package.json) for all npm packages that are being used.
 
+## Shape Editor
+
+- all svg to path
+- every shape new class with IShape contains d of path
+
 ## Additional Resources
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
