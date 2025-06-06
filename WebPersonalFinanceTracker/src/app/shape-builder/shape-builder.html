@@ -24,10 +24,16 @@
       (mousedown)="shape_onMouseDown($event, shape)"
     />
 
-    <path
-      fill="yellow"
-      d="M 39.470046,83.272869 99.978022,82.996927 166.78162,17.598113 150.69279,16.494331 Z"
-    />
+    <g
+      *ngIf="shape.type === 'path'"
+      [attr.transform]="'translate(' + shape.x + ',' + shape.y + ')'"
+      (mousedown)="shape_onMouseDown($event, shape)"
+    >
+      <path
+        fill="yellow"
+        d="M 0,119.12336 93.317748,118.63112 196.34483,1.968989 171.53201,0 Z"
+      />
+    </g>
 
     <circle
       *ngFor="let cp of shape.connectionPoints"

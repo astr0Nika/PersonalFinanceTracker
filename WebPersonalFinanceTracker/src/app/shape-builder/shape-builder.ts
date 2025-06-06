@@ -48,6 +48,21 @@ export class ShapeBuilder {
           },
         ],
       },
+      {
+        id: this.idCounter++,
+        type: 'path',
+        x: 200,
+        y: 200,
+        width: 0,
+        height: 0,
+        connectionPoints: [
+          {
+            x: 45,
+            y: 116,
+            id: this.idCounter++,
+          },
+        ],
+      },
     ];
   }
 
@@ -91,11 +106,10 @@ export class ShapeBuilder {
       const movedShape: IShape = this.draggingShape;
 
       this.shapes.forEach((shape) => {
-        if (
-          shape.id !== movedShape.id &&
-          this.doShapesOverlay(shape, movedShape)
-        ) {
-          this.alignConnectionPoint(movedShape, shape);
+        if (shape.id !== movedShape.id) {
+          if (this.doShapesOverlay(shape, movedShape)) {
+            this.alignConnectionPoint(movedShape, shape);
+          }
         }
       });
     }
@@ -107,23 +121,39 @@ export class ShapeBuilder {
     var horizontalOverlap = false;
     var verticalOverlap = false;
 
-    if (
-      (twoShape.x > oneShape.x && twoShape.x < oneShape.x + oneShape.width) ||
-      (twoShape.x + twoShape.width > oneShape.x &&
-        twoShape.x + twoShape.width < oneShape.x + oneShape.width)
+    // TODO: x-Achse works only sometimes
+    // TODO: y-Achse is not being checked
+
+    // x-Achse
+    if (twoShape.x > oneShape.x && twoShape.x < oneShape.x + oneShape.width) {
+      horizontalOverlap = true;
+    } else if (
+      twoShape.x + twoShape.width > oneShape.x &&
+      twoShape.x + twoShape.width < oneShape.x + oneShape.width
     ) {
       horizontalOverlap = true;
     }
 
-    if (
-      (twoShape.y > oneShape.y && twoShape.y < oneShape.y + oneShape.height) ||
-      (twoShape.y + twoShape.height > oneShape.y &&
-        twoShape.y + twoShape.height < oneShape.y + oneShape.height)
+    if (twoShape.x > oneShape.x && twoShape.x < oneShape.x + oneShape.width) {
+      horizontalOverlap = true;
+    } else if (
+      twoShape.x + twoShape.width > oneShape.x &&
+      twoShape.x + twoShape.width < oneShape.x + oneShape.width
     ) {
-      verticalOverlap = true;
+      horizontalOverlap = true;
     }
 
-    return horizontalOverlap && verticalOverlap;
+    // y-Achse
+
+    // if (
+    //   (twoShape.y > oneShape.y && twoShape.y < oneShape.y + oneShape.height) ||
+    //   (twoShape.y + twoShape.height > oneShape.y &&
+    //     twoShape.y + twoShape.height < oneShape.y + oneShape.height)
+    // ) {
+    //   verticalOverlap = true;
+    // }
+
+    return horizontalOverlap; // && verticalOverlap;
   }
 
   alignConnectionPoint(moveShape: IShape, targetShape: IShape) {
