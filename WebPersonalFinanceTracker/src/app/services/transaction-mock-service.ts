@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { ITransactionService } from '../interfaces/ITransactionService';
 import { Observable, of } from 'rxjs';
 import { Transaction } from '../models/Transaction';
-import mock from './mock-data.json';
+import data from './mock-data.json';
+import { TransactionDescription } from '../models/TransactionDescription';
 
 @Injectable({
   providedIn: 'root',
@@ -11,7 +12,7 @@ export class TransactionMockService implements ITransactionService {
   transactionList: Transaction[];
 
   constructor() {
-    this.transactionList = mock.data;
+    this.transactionList = data.transactions;
   }
 
   getTransactions(): Observable<Transaction[]> {
@@ -24,5 +25,9 @@ export class TransactionMockService implements ITransactionService {
 
   deleteTransaction(id: number): void {
     this.transactionList.findIndex((t) => t.transactionId == id);
+  }
+
+  getTransactionDescriptions(): Observable<TransactionDescription[]> {
+    return of(data.descriptions);
   }
 }

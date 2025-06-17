@@ -37,6 +37,6 @@ A web site, where you can track your finances. Adding (update, delete) your expe
 
 ## Run Program
 
-- start api project
+- start [api project](./BackendPersonalFinanceTracker/README.md)
 - start [web project](./WebPersonalFinanceTracker/README.md)
 - see `http://localhost:4200`

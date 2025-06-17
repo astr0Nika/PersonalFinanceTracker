@@ -1,5 +1,5 @@
 {
-  "data": [
+  "transactions": [
     {
       "transactionId": 0,
       "title": "Kitchen",
@@ -659,6 +659,32 @@
       "transactionDescriptionName": "Red",
       "isIncome": true,
       "fullDateString": ""
+    }
+  ],
+  "descriptions": [
+    {
+      "transactionDescriptionId": 0,
+      "title": "Purple"
+    },
+    {
+      "transactionDescriptionId": 1,
+      "title": "Blue"
+    },
+    {
+      "transactionDescriptionId": 2,
+      "title": "Pink"
+    },
+    {
+      "transactionDescriptionId": 3,
+      "title": "Indigo"
+    },
+    {
+      "transactionDescriptionId": 4,
+      "title": "Red"
+    },
+    {
+      "transactionDescriptionId": 5,
+      "title": "Green"
     }
   ]
 }
