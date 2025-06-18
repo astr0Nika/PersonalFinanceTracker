@@ -4,7 +4,7 @@ import { ITransactionService } from '../interfaces/ITransactionService';
 import { Transaction } from '../models/Transaction';
 import { Observable } from 'rxjs';
 import { TransactionDescription } from '../models/TransactionDescription';
-import { DateTime } from '../models/DateTime';
+import { DateTimeView } from '../models/DateTimeView';
 
 @Injectable({
   providedIn: 'root',
@@ -22,17 +22,27 @@ export class TransactionAPIService implements ITransactionService {
     price: number,
     isIncome: boolean,
     transactionDescriptionId: number | null,
-    transactionDate: DateTime | null
+    transactionDate: DateTimeView | null
   ): void {
-    this.http.post(`${this.apiUrl}/Transactions/Create`, {
-      params: {
-        title: title,
-        price: price,
-        isIncoming: isIncome,
-        TransactionDescriptionId: transactionDescriptionId,
-        datetime: transactionDate,
-      },
-    });
+    const body = {
+      Title: title,
+      Price: price,
+      IsIncome: isIncome,
+      TransactionDescriptionId: transactionDescriptionId,
+      TransactionDate: transactionDate
+        ? {
+            Year: transactionDate.year,
+            Month: transactionDate.month,
+            Day: transactionDate.day,
+            Hour: transactionDate.hour,
+            Minute: transactionDate.minute,
+          }
+        : null,
+    };
+
+    this.http
+      .post(`${this.apiUrl}/Transactions/Create`, body)
+      .subscribe((response) => console.log(response));
   }
 
   getTransactionDescriptions(): Observable<TransactionDescription[]> {

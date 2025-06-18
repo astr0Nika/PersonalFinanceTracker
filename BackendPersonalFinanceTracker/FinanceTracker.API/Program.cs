@@ -9,7 +9,9 @@ builder.Services.AddCors(options =>
     options.AddPolicy("MyPolicy", policy =>
     {
         // this websites can get a response
-        policy.WithOrigins("http://localhost:4200");
+        policy.WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 

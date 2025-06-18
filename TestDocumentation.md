@@ -8,8 +8,8 @@
 | 3   | 19.05.2025 09:00 | Start API                               | -                                                                            | localhost page opens with api and it's methods | Failed    |
 | 4   | 19.05.2025 09:19 | Start API                               | -                                                                            | localhost page opens with api and it's methods | Succeeded |
 | 5   | 19.05.2025 15:19 | Start API                               | -                                                                            | localhost page opens with api and it's methods | Succeeded |
-| 6   | 19.05.2025 16:02 | Create Transaction                      | title=Januar Lohn: price=1200.00; isIncoming=true                            | eintrag in db                                  | Failed    |
-| 7   | 19.05.2025 16:12 | Create Transaction                      | title=Januar Lohn: price=1200.00; isIncoming=true                            | eintrag in db                                  | Succeeded |
+| 6   | 19.05.2025 16:02 | Create Transaction                      | title=Januar Lohn: price=1200.00; isIncome=true                              | eintrag in db                                  | Failed    |
+| 7   | 19.05.2025 16:12 | Create Transaction                      | title=Januar Lohn: price=1200.00; isIncome=true                              | eintrag in db                                  | Succeeded |
 | 8   | 21.05.2025 08:10 | Start API                               | -                                                                            | localhost page opens with api and it's methods | Failed    |
 | 9   | 21.05.2025 08:13 | Start API                               | -                                                                            | localhost page opens with api and it's methods | Succeeded |
 | 10  | 21.05.2025 08:14 | Get Transactions                        | -                                                                            | return the one current transaction in db file  | Succeeded |
@@ -24,16 +24,19 @@
 
 ## UI (Website)
 
-| Nr. | Date Time        | Action                      | Input | Expectation                      | Status    |
-| --- | ---------------- | --------------------------- | ----- | -------------------------------- | --------- |
-| 1   | 21.05.2025 10:00 | Run Angular Website         | -     | No error, navigation/routes work | Succeeded |
-| 2   | 21.05.2025 10:57 | Run Angular Website         | -     | No error, navigation/routes work | Succeeded |
-| 3   | 22.05.2025 07:35 | API Call - GetTransactions  | -     | List of transactions from db     | Failed    |
-| 4   | 22.05.2025 07:44 | API Call - GetTransactions  | -     | List of transactions from db     | Failed    |
-| 5   | 22.05.2025 15:34 | API Call - GetTransactions  | -     | List of transactions from db     | Succeed   |
-| 5   | 23.05.2025 11:19 | Mock Data - GetTransactions | -     | List of transactions from db     | Succeed   |
-| 5   | 23.05.2025 11:37 | API Call - GetTransactions  | -     | List of transactions from db     | Failed    |
-| 5   | 23.05.2025 11:44 | Show GetTransactions        | -     | See table transactions           | Failed    |
-| 5   | 23.05.2025 12:29 | API - Show GetTransactions  | -     | See table transactions           | Succeed   |
-| 5   | 23.05.2025 12:29 | Mock - Show GetTransactions | -     | See table transactions           | Succeed   |
-| 5   | 04.06.2025 14:44 | Mock - Show GetTransactions | -     | See table transactions           | Succeed   |
+| Nr. | Date Time        | Action                      | Input                                                                               | Expectation                      | Status    |
+| --- | ---------------- | --------------------------- | ----------------------------------------------------------------------------------- | -------------------------------- | --------- |
+| 1   | 21.05.2025 10:00 | Run Angular Website         | -                                                                                   | No error, navigation/routes work | Succeeded |
+| 2   | 21.05.2025 10:57 | Run Angular Website         | -                                                                                   | No error, navigation/routes work | Succeeded |
+| 3   | 22.05.2025 07:35 | API Call - GetTransactions  | -                                                                                   | List of transactions from db     | Failed    |
+| 4   | 22.05.2025 07:44 | API Call - GetTransactions  | -                                                                                   | List of transactions from db     | Failed    |
+| 5   | 22.05.2025 15:34 | API Call - GetTransactions  | -                                                                                   | List of transactions from db     | Succeed   |
+| 5   | 23.05.2025 11:19 | Mock Data - GetTransactions | -                                                                                   | List of transactions from db     | Succeed   |
+| 5   | 23.05.2025 11:37 | API Call - GetTransactions  | -                                                                                   | List of transactions from db     | Failed    |
+| 5   | 23.05.2025 11:44 | Show GetTransactions        | -                                                                                   | See table transactions           | Failed    |
+| 5   | 23.05.2025 12:29 | API - Show GetTransactions  | -                                                                                   | See table transactions           | Succeed   |
+| 5   | 23.05.2025 12:29 | Mock - Show GetTransactions | -                                                                                   | See table transactions           | Succeed   |
+| 5   | 04.06.2025 14:44 | Mock - Show GetTransactions | -                                                                                   | See table transactions           | Succeed   |
+| 5   | 18.06.2025 14:48 | Post - create Transaction   | title=Juni Gehalt; price=1200; isIncome=true; descriptionId=null; datetime=null     |                                  | Failed    |
+| 5   | 18.06.2025 15:35 | Post - create Transaction   | title=Juni Gehalt; price=1200; isIncome=true; descriptionId=null; datetime=currDate |                                  | Failed    |
+| 5   | 18.06.2025 16:06 | Post - create Transaction   | title=Juni Gehalt; price=1200; isIncome=true; descriptionId=null; datetime=currDate |                                  | Succeed   |

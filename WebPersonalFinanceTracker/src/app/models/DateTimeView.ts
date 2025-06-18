@@ -1,4 +1,4 @@
-export class DateTime {
+export class DateTimeView {
   constructor(date: Date) {
     this.year = date.getFullYear();
     this.month = date.getMonth();

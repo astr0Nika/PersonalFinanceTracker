@@ -8,7 +8,8 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { Transaction } from '../models/Transaction';
+import { TransactionAPIService } from '../services/transaction-api-service';
+import { DateTimeView } from '../models/DateTimeView';
 
 @Component({
   selector: 'app-create-transaction',
@@ -19,6 +20,7 @@ import { Transaction } from '../models/Transaction';
 export class CreateTransaction {
   // transactionService = inject(TransactionAPIService);
   transactionService = inject(TransactionMockService);
+
   descriptionList: TransactionDescription[] = [];
 
   transactionForm = new FormGroup({
@@ -36,17 +38,16 @@ export class CreateTransaction {
 
   onSubmit() {
     if (this.transactionForm.valid) {
-      // create new account
       const createValue = this.transactionForm.value;
 
-      let createTransaction = new Transaction(
+      // TODO: get description id
+      this.transactionService.createTransaction(
         createValue.title!,
         createValue.price!,
         createValue.income!,
-        createValue.description!
+        null,
+        new DateTimeView(new Date())
       );
-
-      this.transactionService.createTransaction(createTransaction);
 
       // reset form
       this.transactionForm = new FormGroup({

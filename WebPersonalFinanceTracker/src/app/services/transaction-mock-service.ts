@@ -4,7 +4,7 @@ import { Observable, of } from 'rxjs';
 import { Transaction } from '../models/Transaction';
 import data from './mock-data.json';
 import { TransactionDescription } from '../models/TransactionDescription';
-import { DateTime } from '../models/DateTime';
+import { DateTimeView } from '../models/DateTimeView';
 
 @Injectable({
   providedIn: 'root',
@@ -25,7 +25,7 @@ export class TransactionMockService implements ITransactionService {
           x.isIncome,
           this.descriptionList.find(
             (y) => y.transactionDescriptionId === x.transactionDescriptionId
-          )!.title
+          )?.title ?? null
         )
     );
   }
@@ -35,10 +35,10 @@ export class TransactionMockService implements ITransactionService {
     price: number,
     isIncome: boolean,
     transactionDescriptionId: number | null,
-    transactionDate: DateTime | null
+    transactionDate: DateTimeView | null
   ): void {
     const firstNotUsedNumber = this.transactionList.length;
-    const date = transactionDate ?? new DateTime(new Date());
+    const date = transactionDate ?? new DateTimeView(new Date());
     const descriptionName =
       this.descriptionList.find(
         (x) => x.transactionDescriptionId === transactionDescriptionId

@@ -1,10 +1,10 @@
-import { DateTime } from './DateTime';
+import { DateTimeView } from './DateTimeView';
 
 export class Transaction {
   constructor(
     transactionId: number,
     title: string,
-    transactionDate: DateTime,
+    transactionDate: DateTimeView,
     price: number,
     isIncome: boolean,
     transactionDescriptionName: string | null
@@ -19,7 +19,7 @@ export class Transaction {
 
   transactionId: number;
   title: string;
-  transactionDate: DateTime;
+  transactionDate: DateTimeView;
   price: number;
   isIncome: boolean;
   transactionDescriptionName: string | null;

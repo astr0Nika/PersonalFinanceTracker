@@ -24,18 +24,17 @@ namespace FinanceTracker.Core
                 .ToList();
         }
 
-        public async Task CreateAsync(string title, double price, bool isIncoming, int? transactionDescriptionId, DateTime transactionDate)
+        public async Task CreateAsync(string title, double price, bool isIncome, int? transactionDescriptionId, DateTime transactionDate)
         {
-            TransactionDescriptionEntity found = await _context.TransactionDescriptions
+            TransactionDescriptionEntity? found = await _context.TransactionDescriptions
                     .Where(td => td.TransactionDescriptionId == transactionDescriptionId)
-                    .FirstOrDefaultAsync()
-                    ?? throw new Exception("Transaction Description not found");
+                    .FirstOrDefaultAsync();
 
             await _context.Transactions.AddAsync(new TransactionEntity()
             {
                 Title = title,
                 Price = price,
-                IsIncome = isIncoming,
+                IsIncome = isIncome,
                 TransactionDate = transactionDate,
                 TransactionDescription = found
             });

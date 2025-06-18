@@ -25,12 +25,17 @@ namespace FinanceTracker.API.Controllers
         }
 
         [HttpPost("Create")]
-        public async Task CreateTransaction(string title, double price, bool isIncoming, int? transactionDescriptionId = null, DateTimeView? transactionDate = null)
+        public async Task CreateTransaction([FromBody] TransactionRequest transactionRequest)
         {
-            // TODO: check parameters
-            DateTime date = transactionDate?.ConvertToDateTime() ?? new DateTime();
+            if (string.IsNullOrEmpty(transactionRequest.Title) || transactionRequest.Price <= 0)
+            {
+                // TODO: better exception
+                throw new Exception("aaaaaaaaaaaaaaaaaaa");
+            }
 
-            await _transactionRepo.CreateAsync(title, price, isIncoming, transactionDescriptionId, date);
+            DateTime date = transactionRequest.TransactionDate?.ConvertToDateTime() ?? new DateTime();
+
+            await _transactionRepo.CreateAsync(transactionRequest.Title, transactionRequest.Price, transactionRequest.IsIncome, transactionRequest.TransactionDescriptionId, date);
         }
     }
 }
