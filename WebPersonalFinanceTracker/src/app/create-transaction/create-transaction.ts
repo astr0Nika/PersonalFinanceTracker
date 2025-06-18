@@ -35,13 +35,20 @@ export class CreateTransaction {
   }
 
   onSubmit() {
-    // TODO: show when invalid
     if (this.transactionForm.valid) {
-      console.warn(this.transactionForm.value);
-
-      // TODO: create from service
+      // create new account
       const createValue = this.transactionForm.value;
 
+      let createTransaction = new Transaction(
+        createValue.title!,
+        createValue.price!,
+        createValue.income!,
+        createValue.description!
+      );
+
+      this.transactionService.createTransaction(createTransaction);
+
+      // reset form
       this.transactionForm = new FormGroup({
         title: new FormControl('', [
           Validators.required,

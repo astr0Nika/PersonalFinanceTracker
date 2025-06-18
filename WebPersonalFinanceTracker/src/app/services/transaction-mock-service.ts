@@ -20,7 +20,7 @@ export class TransactionMockService implements ITransactionService {
   }
 
   createTransaction(transaction: Transaction): void {
-    throw new Error('Method not implemented.');
+    this.transactionList.push(transaction);
   }
 
   deleteTransaction(id: number): void {
