@@ -12,7 +12,7 @@
       },
       "price": 29.99,
       "isIncome": true,
-      "transactionDescriptionName": "Purple",
+      "transactionDescriptionId": 0,
       "fullDateString": ""
     },
     {
@@ -26,7 +26,7 @@
         "minute": 22
       },
       "price": 2.99,
-      "transactionDescriptionName": "Purple",
+      "transactionDescriptionId": 0,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -41,7 +41,7 @@
         "minute": 5
       },
       "price": 8.99,
-      "transactionDescriptionName": "Green",
+      "transactionDescriptionId": 5,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -56,7 +56,7 @@
         "minute": 21
       },
       "price": 3.99,
-      "transactionDescriptionName": "Red",
+      "transactionDescriptionId": 4,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -71,7 +71,7 @@
         "minute": 33
       },
       "price": 4.99,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -86,7 +86,7 @@
         "minute": 15
       },
       "price": 1.89,
-      "transactionDescriptionName": "Green",
+      "transactionDescriptionId": 5,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -101,7 +101,7 @@
         "minute": 55
       },
       "price": 2.99,
-      "transactionDescriptionName": "Green",
+      "transactionDescriptionId": 5,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -116,7 +116,7 @@
         "minute": 49
       },
       "price": 5.99,
-      "transactionDescriptionName": "Indigo",
+      "transactionDescriptionId": 3,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -131,7 +131,7 @@
         "minute": 4
       },
       "price": 29.99,
-      "transactionDescriptionName": "Pink",
+      "transactionDescriptionId": 2,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -146,7 +146,7 @@
         "minute": 27
       },
       "price": 49.99,
-      "transactionDescriptionName": "Green",
+      "transactionDescriptionId": 5,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -161,7 +161,7 @@
         "minute": 46
       },
       "price": 2.99,
-      "transactionDescriptionName": "Pink",
+      "transactionDescriptionId": 2,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -176,7 +176,7 @@
         "minute": 14
       },
       "price": 19.99,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -191,7 +191,7 @@
         "minute": 27
       },
       "price": 59.99,
-      "transactionDescriptionName": "Purple",
+      "transactionDescriptionId": 0,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -206,7 +206,7 @@
         "minute": 48
       },
       "price": 99.99,
-      "transactionDescriptionName": "Indigo",
+      "transactionDescriptionId": 3,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -221,7 +221,7 @@
         "minute": 41
       },
       "price": 13.14,
-      "transactionDescriptionName": "Red",
+      "transactionDescriptionId": 4,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -236,7 +236,7 @@
         "minute": 3
       },
       "price": 7.9,
-      "transactionDescriptionName": "Blue",
+      "transactionDescriptionId": 1,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -251,7 +251,7 @@
         "minute": 30
       },
       "price": 7.9,
-      "transactionDescriptionName": "Indigo",
+      "transactionDescriptionId": 3,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -266,7 +266,7 @@
         "minute": 10
       },
       "price": 4.05,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -281,7 +281,7 @@
         "minute": 24
       },
       "price": 7.9,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -296,7 +296,7 @@
         "minute": 11
       },
       "price": 7.9,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -311,7 +311,7 @@
         "minute": 55
       },
       "price": 7.9,
-      "transactionDescriptionName": "Pink",
+      "transactionDescriptionId": 2,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -326,7 +326,7 @@
         "minute": 43
       },
       "price": 7.9,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -341,7 +341,7 @@
         "minute": 23
       },
       "price": 13.14,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -356,7 +356,7 @@
         "minute": 33
       },
       "price": 4.99,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -371,7 +371,7 @@
         "minute": 15
       },
       "price": 1.89,
-      "transactionDescriptionName": "Green",
+      "transactionDescriptionId": 5,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -386,7 +386,7 @@
         "minute": 55
       },
       "price": 2.99,
-      "transactionDescriptionName": "Green",
+      "transactionDescriptionId": 5,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -401,7 +401,7 @@
         "minute": 49
       },
       "price": 5.99,
-      "transactionDescriptionName": "Indigo",
+      "transactionDescriptionId": 3,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -416,7 +416,7 @@
         "minute": 4
       },
       "price": 29.99,
-      "transactionDescriptionName": "Pink",
+      "transactionDescriptionId": 2,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -431,7 +431,7 @@
         "minute": 27
       },
       "price": 49.99,
-      "transactionDescriptionName": "Green",
+      "transactionDescriptionId": 5,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -446,7 +446,7 @@
         "minute": 46
       },
       "price": 2.99,
-      "transactionDescriptionName": "Pink",
+      "transactionDescriptionId": 2,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -461,7 +461,7 @@
         "minute": 14
       },
       "price": 19.99,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -476,7 +476,7 @@
         "minute": 27
       },
       "price": 59.99,
-      "transactionDescriptionName": "Purple",
+      "transactionDescriptionId": 0,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -491,7 +491,7 @@
         "minute": 48
       },
       "price": 99.99,
-      "transactionDescriptionName": "Indigo",
+      "transactionDescriptionId": 3,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -506,7 +506,7 @@
         "minute": 41
       },
       "price": 13.14,
-      "transactionDescriptionName": "Red",
+      "transactionDescriptionId": 4,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -521,7 +521,7 @@
         "minute": 3
       },
       "price": 7.9,
-      "transactionDescriptionName": "Blue",
+      "transactionDescriptionId": 1,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -536,7 +536,7 @@
         "minute": 30
       },
       "price": 7.9,
-      "transactionDescriptionName": "Indigo",
+      "transactionDescriptionId": 3,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -551,7 +551,7 @@
         "minute": 10
       },
       "price": 4.05,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -566,7 +566,7 @@
         "minute": 24
       },
       "price": 7.9,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -581,7 +581,7 @@
         "minute": 11
       },
       "price": 7.9,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -596,7 +596,7 @@
         "minute": 55
       },
       "price": 7.9,
-      "transactionDescriptionName": "Pink",
+      "transactionDescriptionId": 2,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -611,7 +611,7 @@
         "minute": 43
       },
       "price": 7.9,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -626,7 +626,7 @@
         "minute": 23
       },
       "price": 13.14,
-      "transactionDescriptionName": null,
+      "transactionDescriptionId": null,
       "isIncome": true,
       "fullDateString": ""
     },
@@ -641,7 +641,7 @@
         "minute": 41
       },
       "price": 13.14,
-      "transactionDescriptionName": "Purple",
+      "transactionDescriptionId": 0,
       "isIncome": false,
       "fullDateString": ""
     },
@@ -656,7 +656,7 @@
         "minute": 27
       },
       "price": 52.89,
-      "transactionDescriptionName": "Red",
+      "transactionDescriptionId": 4,
       "isIncome": true,
       "fullDateString": ""
     }

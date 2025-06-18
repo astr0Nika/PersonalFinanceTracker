@@ -2,14 +2,16 @@ import { DateTime } from './DateTime';
 
 export class Transaction {
   constructor(
+    transactionId: number,
     title: string,
+    transactionDate: DateTime,
     price: number,
     isIncome: boolean,
     transactionDescriptionName: string | null
   ) {
-    this.transactionId = 0;
+    this.transactionId = transactionId;
     this.title = title;
-    this.transactionDate = new DateTime(new Date());
+    this.transactionDate = transactionDate;
     this.price = price;
     this.isIncome = isIncome;
     this.transactionDescriptionName = transactionDescriptionName;

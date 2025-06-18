@@ -12,11 +12,10 @@ namespace FinanceTracker.API.Controllers
     {
         private readonly TransactionDescriptionRepo _transactionDescriptionRepo;
 
-        public TransactionDescriptionsController(TransactionDescriptionRepo reposetory)
+        public TransactionDescriptionsController(TransactionDescriptionRepo repository)
         {
-            _transactionDescriptionRepo = reposetory;
+            _transactionDescriptionRepo = repository;
         }
-
 
         [HttpGet("GetList")]
         public async Task<List<TransactionDescriptionView>> GetTransactionDescriptionsAsync()
