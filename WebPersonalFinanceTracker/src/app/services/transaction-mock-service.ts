@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ITransactionService } from '../interfaces/ITransactionService';
+import { TransactionService } from '../interfaces/TransactionService';
 import { Observable, of } from 'rxjs';
 import { Transaction } from '../models/Transaction';
 import data from './mock-data.json';
@@ -9,7 +9,7 @@ import { DateTimeView } from '../models/DateTimeView';
 @Injectable({
   providedIn: 'root',
 })
-export class TransactionMockService implements ITransactionService {
+export class TransactionMockService implements TransactionService {
   descriptionList: TransactionDescription[];
   transactionList: Transaction[];
 

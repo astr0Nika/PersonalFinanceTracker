@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { TransactionDescription } from '../models/TransactionDescription';
-import { TransactionMockService } from '../services/transaction-mock-service';
 import { CommonModule } from '@angular/common';
 import {
   FormGroup,
@@ -8,8 +7,8 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { TransactionAPIService } from '../services/transaction-api-service';
 import { DateTimeView } from '../models/DateTimeView';
+import { TransactionService } from '../interfaces/TransactionService';
 
 @Component({
   selector: 'app-create-transaction',
@@ -18,8 +17,7 @@ import { DateTimeView } from '../models/DateTimeView';
   styleUrl: './create-transaction.css',
 })
 export class CreateTransaction {
-  // transactionService = inject(TransactionAPIService);
-  transactionService = inject(TransactionMockService);
+  transactionService = inject(TransactionService);
 
   descriptionList: TransactionDescription[] = [];
 

@@ -3,10 +3,10 @@ import { Transaction } from '../models/Transaction';
 import { TransactionDescription } from '../models/TransactionDescription';
 import { DateTimeView } from '../models/DateTimeView';
 
-export interface ITransactionService {
-  getTransactions(): Observable<Transaction[]>;
+export abstract class TransactionService {
+  public abstract getTransactions(): Observable<Transaction[]>;
 
-  createTransaction(
+  public abstract createTransaction(
     title: string,
     price: number,
     isIncome: boolean,
@@ -14,5 +14,7 @@ export interface ITransactionService {
     transactionDate: DateTimeView | null
   ): void;
 
-  getTransactionDescriptions(): Observable<TransactionDescription[]>;
+  public abstract getTransactionDescriptions(): Observable<
+    TransactionDescription[]
+  >;
 }

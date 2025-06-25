@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { ITransactionService } from '../interfaces/ITransactionService';
+import { TransactionService } from '../interfaces/TransactionService';
 import { Transaction } from '../models/Transaction';
 import { Observable } from 'rxjs';
 import { TransactionDescription } from '../models/TransactionDescription';
@@ -9,7 +9,7 @@ import { DateTimeView } from '../models/DateTimeView';
 @Injectable({
   providedIn: 'root',
 })
-export class TransactionAPIService implements ITransactionService {
+export class TransactionAPIService implements TransactionService {
   private readonly apiUrl = 'http://localhost:5299/api';
   private http = inject(HttpClient);
 

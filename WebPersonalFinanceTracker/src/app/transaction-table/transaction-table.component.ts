@@ -1,8 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TransactionAPIService } from '../services/transaction-api-service';
-import { TransactionMockService } from '../services/transaction-mock-service';
 import { Transaction } from '../models/Transaction';
+import { TransactionService } from '../interfaces/TransactionService';
 
 @Component({
   selector: 'app-transaction-table',
@@ -11,8 +10,7 @@ import { Transaction } from '../models/Transaction';
   styleUrl: './transaction-table.component.css',
 })
 export class TransactionTableComponent {
-  // transactionService = inject(TransactionAPIService);
-  transactionService = inject(TransactionMockService);
+  transactionService = inject(TransactionService);
 
   transactions: Transaction[] = [];
 
